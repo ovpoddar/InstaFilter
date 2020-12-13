@@ -4,11 +4,38 @@
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
-  
   <script language="javascript" type="text/javascript" src="sketch.js"></script>
-  <style> body {padding: 0; margin: 0;} </style>
+  <style> body {
+     padding: 0;
+     margin: 0;
+    }
+    #recording{
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+      display: none;
+      position: absolute;
+      left: 610px;
+      top: 450px;
+      z-index: 10;
+    }
+    canvas{
+      position: absolute;
+    }
+    #snap{
+      position: absolute;
+      z-index: 10;
+      top: 400px;
+      left: 300px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+    }
+  </style>
 </head>
-
+<button onclick="snap()" id="snap"></button>
+<div id=recording></div>
 <body>
 </body>
 </html>
